@@ -43,20 +43,52 @@ Righticon.addEventListener('click', function (e)
 
     
 
-const swiper = new Swiper('.sliderwrapper', {
+// const swiper = new Swiper('.sliderwrapper', {
    
-    loop: true,
+//     loop: true,
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+//     // If we need pagination
+//     pagination: {
+//       el: '.swiper-pagination',
+//     },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
   
    
+//   });
+
+
+   //JavaScript code to handle the slider functionality
+  var slider = document.querySelector('.slider');
+  var sliderInner = document.querySelector('.slider-inner');
+  var card = sliderInner.children;
+  var currentIndex = 0;
+
+  function showcard(index) {
+    for (var i = 0; i < card.length; i++) {
+      card[i].style.display = 'none';
+    }
+    card[index].style.display = 'block';
+  }
+
+  showcard(currentIndex);
+
+  document.querySelector('.next').addEventListener('click', function() {
+    currentIndex++;
+    if (currentIndex >= card.length) {
+      currentIndex = 0;
+    }
+    showcard(currentIndex);
+  });
+
+  document.querySelector('.prev').addEventListener('click', function() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = card.length - 1;
+    }
+    showcard(currentIndex);
   });

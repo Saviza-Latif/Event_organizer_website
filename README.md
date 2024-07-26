@@ -1,11 +1,13 @@
 # Event_organizer_website
 
+This project is acomprehensive event organizer website designed to streamline the operations of a event organizer.
+
 Languages:
 1-html
 2-css
 3-javascript
 4-php
-5-mysqli
+5-mysql
 
 
-It consist of...
+

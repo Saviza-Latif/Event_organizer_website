@@ -1,0 +1,146 @@
+:root{
+    --color1:#363636;
+    --color2:rgb(26, 26, 26);
+    --color2op:rgba(26, 26, 26,0.3);
+    --color3:rgb(181, 115, 76);
+   
+    --border:.1rem solid var(--color3);
+    --box-shadow:0 .5rem 1rem rgba(28, 42, 38, 0.1);
+    --color3op: rgba(181,115,76,0);
+ }
+ 
+ *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .2s linear;
+ }
+ footer 
+ {
+    background-color: var(--color2);
+    bottom: 0;
+   
+ }
+
+ .footercontainer
+ {
+    width: 100%;
+    padding: 70px 30px 20px;
+    bottom:0;
+
+ }
+ @keyframes fade-in
+ {
+   to{scale:1;opacity:1}
+ }
+  
+ /* socail icon */
+ .socialicons
+ {
+    display: flex;
+    justify-content: center;
+  
+ }
+ .socialicons a
+ {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--color1);
+    color: var(--color3);
+    margin: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fade-in linear forwards ;
+    animation-timeline: view();
+    animation-range: entry 200;
+
+
+
+ }
+
+.socialicons a i
+{
+    font-size:2rem;
+    color:var(--color3);
+    opacity: 0.7;
+}
+/* hover effect of social icon */
+.socialicons a:hover
+{
+    background-color: var(--color3);
+    transition: 0.8s;
+
+}
+.socialicons a:hover i
+{
+    color: var(--color2);
+    transition: 0.8s;
+
+}
+
+/* quicklinks */
+
+.quicklinks
+{
+    margin: 30px 0;
+}
+.quicklinks ul
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+}
+.quicklinks ul li a
+{
+    color:var(--color3);
+    margin: 20px;
+    text-decoration: none;
+    font-size:1.3rem;
+    opacity:0.7;
+    transition: 0.5s;
+
+}
+.quicklinks ul li a:hover
+{
+
+    font-weight: 1000;
+    opacity: 1;
+}
+
+.bottomfooter
+{
+    background-color: var(--color3);
+    padding: 20px;
+    text-align: center;
+  
+}
+.bottomfooter p
+{
+    color:var(--color2);
+}
+.creator
+{
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin:0px 5px;
+}
+
+/* media query */
+@media(max-width:700px)
+{
+    .quicklinks ul
+    {
+        flex-direction: column;
+    }
+    .quicklinks ul li
+    {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
