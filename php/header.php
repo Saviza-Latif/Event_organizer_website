@@ -7,17 +7,16 @@ include 'config.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radiant Events</title>
-     
+     <!-- custom stylesheet -->
     <link rel="stylesheet" href="css/heading.css" >
-    
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <!-- starting of navbar -->
-      <nav class="navbar">
-        <!-- left icon bar -->
+      <nav class="navbar"> 
     
-        <!-- <img src="images/LeftIconBar.png" class="lefticonbar" id="LeftIcon"> -->
+        
         <div class=" fas fa-bars lefticonbar" id="LeftIcon" ></div>
            <div class="MainName">
                 <a href="home.php">
@@ -30,7 +29,7 @@ include 'config.php';
            
             <div id="user-btn" class="fas fa-user"></div>
         
-  
+           <!-- userbox  -->
          <div class="user-box">
             <p>username : <span><?php echo $_SESSION['user_name']; ?></span></p>
             <p>email : <span><?php echo $_SESSION['user_email']; ?></span></p>
@@ -39,7 +38,7 @@ include 'config.php';
              
                
            
-            <!-- left icon bar -->
+            <!-- left icon bar dropdown -->
             
             <div class="sub-menu-wrap-Left hide-menu" id="subMenuLeft">
                 <div class="sub-menu-Left " >
