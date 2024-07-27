@@ -14,7 +14,7 @@ body{
     --color2:rgb(26, 26, 26);
     --color2op:rgba(26, 26, 26,0.3);
     --color3:rgb(181, 115, 76);
-   --header-color:rgba(181, 115, 76,0.4);
+   --header-color:rgba(26, 26, 26,0.3);
     --border:.1rem solid var(--color3);
     --box-shadow:0 .5rem 1rem rgba(28, 42, 38, 0.1);
     --color3op: rgba(181,115,76,0);

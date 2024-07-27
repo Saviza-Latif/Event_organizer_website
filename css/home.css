@@ -434,7 +434,7 @@
    transform: translateY(-50%);
    cursor: pointer;
    font-size: 36px;
-   color: var(--color2);
+   color: var(--color3);
    background-color: var(--color3op);
    border: none;
    padding: 10px 20px;

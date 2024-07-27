@@ -10,4 +10,8 @@ Languages:
 5-mysql
 
 
+Tools/Softwares:
+1.visual studio code
+2.XAMPP 
+
 

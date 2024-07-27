@@ -86,7 +86,7 @@ $navbar_text = 'Services';
          </div>
          <div class="servicescontent">
             <i class="fa-solid fa-building"></i>
-            <h2>Cooperate events</h2>
+            <h2>Corporate events</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
          </div>
          <div class="servicescontent">
